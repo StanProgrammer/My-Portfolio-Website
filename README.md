@@ -93,8 +93,6 @@ POST /api/newsletter
 
 ## 🧠 Future Improvements
 
-* Add database (PostgreSQL / MongoDB) for persistent storage
-* Implement authentication (optional admin panel)
 * Add blog system with MDX
 * Improve email deliverability with custom domain
 * Add analytics (e.g., Vercel Analytics / Google Analytics)
