@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+/* =========================
+   THEME
+========================= */
+:root {
+  /* Light */
+  --color-ink: #f8f6f1;
+  --color-paper: #1a1a1a;
+
+  --color-gold: #9f7f2a; 
+
+  --color-ash: #ffffff;
+  --color-mist: #6b7280;
+  --color-border: #e5e2dc;
+}
+
+.dark {
+  /* Dark */
+  --color-ink: #0b0b0c;
+  --color-paper: #f5f5f5;
+
+  --color-gold: #c9a84c;
+
+  --color-ash: #1a1a1c;
+  --color-mist: #9ca3af;
+  --color-border: #2f2f32;
+  background: radial-gradient(circle at top, #111 0%, #0b0b0c 100%);
+}
+
+/* =========================
+   BASE
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: 'DM Mono', monospace;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* =========================
+   NAV
+========================= */
+.nav-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-mist);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-paper);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  @apply inline-block px-6 py-3 text-sm tracking-wide rounded-md transition-all;
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: black;
+}
+
+.dark .btn-primary {
+  color: var(--color-ink);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-border);
+  color: var(--color-paper);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.divider {
+  width: 3rem;
+  height: 1px;
+  background: var(--color-gold);
+  margin: 2rem auto;
+}
+
+/* =========================
+   SCROLLBAR (optional clean)
+========================= */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+}
+
+/* Fix Chrome autofill background */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--color-ash) inset !important;
+  -webkit-text-fill-color: var(--color-paper) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Fix focus background */
+input:focus,
+textarea:focus {
+  background-color: var(--color-ash) !important;
+}
