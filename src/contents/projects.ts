@@ -7,7 +7,7 @@ export const projects: Project[] = [
         technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe API', 'Tailwind CSS'],
         githubLink: 'https://github.com/StanProgrammer/e-commerce-project',
         demoLink: 'https://e-commerce-project-zeta-ten.vercel.app/',
-        image: '/projects/e-commerce-website.png',
+        image: '/projects/e-commerce.png',
       },
       // {
       //   title: 'Task Management App',
