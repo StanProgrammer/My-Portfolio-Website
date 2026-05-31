@@ -98,7 +98,7 @@ const ContactPage = () => {
               icon: <FaPhone />,
               title: "Phone",
               value: "+91 7020353286",
-              link: "tel:7020353286",
+              link: "tel:+917020353286",
             },
             {
               icon: <FaMapMarkerAlt />,

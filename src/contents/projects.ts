@@ -3,7 +3,7 @@ import { Project } from '@/types';
 export const projects: Project[] = [
     {
         title: 'E-commerce Platform',
-        description: 'A full-stack e-commerce platform built with MERN .',
+        description: 'A full-stack e-commerce platform built with the MERN stack.',
         technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe API', 'Tailwind CSS'],
         githubLink: 'https://github.com/StanProgrammer/e-commerce-project',
         demoLink: 'https://e-commerce-project-zeta-ten.vercel.app/',

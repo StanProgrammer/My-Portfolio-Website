@@ -93,7 +93,7 @@ const ProjectsPage = () => {
         <p className="text-(--color-mist) mb-4 text-sm md:text-base">Want to explore more of my work?</p>
 
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/StanProgrammer"
           target="_blank"
           rel="noopener noreferrer"
           className="

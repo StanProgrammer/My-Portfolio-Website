@@ -70,7 +70,10 @@ const Hero = () => {
           className="flex justify-center gap-6 mt-6 mb-8"
         >
           <Link
-            href="/"
+            href="https://github.com/StanProgrammer"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
             className="text-(--color-mist) hover:text-(--color-gold) transition transform hover:-translate-y-1"
           >
             <FaGithub size={24} />

@@ -41,7 +41,7 @@ const Footer = () => {
           {/* Right */}
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com/"
+              href="https://github.com/StanProgrammer"
               target="_blank"
               aria-label="GitHub Profile"
               className="
