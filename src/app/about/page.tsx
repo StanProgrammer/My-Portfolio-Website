@@ -73,7 +73,7 @@ const AboutPage = () => {
 
       {[
         {
-          role: "Senior Full Stack Developer",
+          role: "Senior Full Stack Developer(Backend Focus)",
           company: "Turing",
           duration: "2024 — Present",
           points: [
@@ -95,7 +95,7 @@ const AboutPage = () => {
           ],
         },
         {
-          role: "Software Developer",
+          role: "Backend Developer",
           company: "Carvita Technologies",
           duration: "2022",
           points: [

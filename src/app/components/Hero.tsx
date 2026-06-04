@@ -9,7 +9,6 @@ import {
   fadeInUp,
   scaleIn,
   staggerContainer,
-  viewport,
 } from "@/utils/animations";
 
 const Hero = () => {
@@ -61,7 +60,7 @@ const Hero = () => {
           variants={fadeInUp}
           className="mt-6 text-lg md:text-xl text-(--color-mist) tracking-wide"
         >
-          Full Stack Developer
+          Full Stack Developer | Backend Developer
         </motion.p>
 
         {/* Social Icons */}
